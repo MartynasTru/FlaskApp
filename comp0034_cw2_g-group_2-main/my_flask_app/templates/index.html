@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+    p {text-align: left; font-size :200%;}
+{% block content %}
+    <h1 style="text-align:center; font-size :300%;margin-bottom:10%"><u>{{ title }}</u></h1>
+
+    <p style="text-align: center; font-size :150%;margin-bottom:5%"><b>
+        This is the home page for the country comparison web app.
+        <br> The web app uses data provided by the World Bank's Doing Business project to compare the attractiveness of
+        doing business in different countries through data visualisations.</b></p>
+    <img src="static/img/world_bank_logo.jpg" style="width:20%;height:20%;" align="right">
+{% endblock %}

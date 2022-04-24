@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% from "_formhelpers.html" import render_field %}
+{% block content %}
+    <p>
+    Please enter the email that you registered with.
+    You will be sent an email that will allow you to reset your password.
+    </p>
+    <form method=post action="{{ url_for('auth.pswreset') }}">
+        {{ form.csrf_token }}
+        {{ render_field(form.email, class="form-control") }}
+
+
+    <p><button type="submit" class="btn btn-primary">Reset password</button></p>
+    </form>
+{% endblock %}
